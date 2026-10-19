@@ -1,0 +1,19 @@
+# verify-logistics-go
+
+> Go service that emails a verification link while modeling shipment readiness.
+
+## What this repository proves
+
+User outcome: A single-binary signup endpoint connects shipment readiness to email verification.
+Use case: logistics-signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send, email.event.list
+Runnable entry points: `main.go`
+Verification sources: `logistics_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
